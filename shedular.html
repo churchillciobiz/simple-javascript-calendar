@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<style>
+			body{
+				display: flex;
+				flex-direction:column;
+				margin:0;
+				padding:0;
+				font-family:  "Amazon Ember",Arial,sans-serif;
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+				  //overflow-x:hidden;
+				  background:#EAEDED;
+				 // width:100%;
+			}
+			.top-h1{
+				text-align: center;
+				font-size:17px;
+			}
+			.card{
+				box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3);
+				transition: all 0.3s linear;
+				cursor: pointer;
+				padding: 5px;
+				text-align: center;
+				margin: 0 auto;
+				//margin-left:13px;
+				//margin-right:13px;
+				//margin-top:20px;
+				background: #ffffff;
+			}
+			.today{
+				background: red;
+				border-radius: 50%;
+				width: 32px;
+				height: 56px;
+			}
+			.table {
+				width: 100%;
+				margin-top: 2rem;
+				border-collapse: collapse;
+				border-spacing: 0;			
+			}
+			
+			.table thead th {
+				text-transform: uppercase;
+				//padding: 0.8rem; 
+				padding:10px;
+			}
+
+			.table tbody tr td {
+				//color: #999;
+				padding: 13px 13px;
+				text-align: center;
+			}
+			
+			.table tbody tr td:first-child {
+				//text-align: left;
+			}
+			
+			.table tbody tr:nth-child(odd) {
+				//background: #222;
+			}
+			.body-content {
+				display: flex;
+				position: relative;
+				width: auto;
+				flex-grow: 1;
+				background: #fff;
+				height: auto;
+				min-height: 60px;
+				margin-bottom: 10px;
+				box-shadow: 1px 0px 2px rgba(0,0,0,0.3);
+				border-radius: 4px;
+				padding: 1px 9px 0;
+				justify-content: space-between;
+			}
+			.bottomMargined {
+				margin-bottom: 7px;
+				padding: 12px;
+			}
+			.middle-body{
+				margin-left: 13px;
+				margin-right: 13px;
+				margin-top: 12px;
+			}
+			.day:hover{
+				background:#e1e1e1;
+			}
+		</style>
+	</head>
+	<body>
+
+			<h1 class="top-h1">Tap Day to View Space</h1>
+			<div class="card">
+				<h3 class="card-header" id="monthAndYear">Month and year</h3>
+				<table class="table table-bordered table-responsive-sm" id="calendar">
+					<thead>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thu</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+					</thead>
+					<tbody id="calendar-body">
+						
+					</tbody>
+				</table>
+				<div class="form-inline">
+					<button class="btn btn-outline-primary" id="previousMonth">Previous</button>
+					<button class="btn btn-outline-primary" id="nextMonth">Next</button>
+				</div>
+				
+				
+			</div>
+			<div class="middle-body">
+				<div class="body-content columned bottomMargined">
+					
+					<div id="customer-reviews">
+						<div>
+							<p>7:00am to 8:00am</p>
+						</div>
+					</div>
+					<div id="customer-reviews">
+						<div>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+				</div>
+				<div class="body-content columned bottomMargined">
+					<div id="customer-reviews">
+						<div>
+							<p>8:00am to 9:00am</p>
+						</div>
+					</div>
+					<div id="customer-reviews">
+						<div>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+				</div>
+				<div class="body-content columned bottomMargined">
+					<div id="customer-reviews">
+						<div>
+							<p>9:00am to 10:00am</p>
+						</div>
+					</div>
+					<div id="customer-reviews">
+						<div>
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		<script src="showcalendar.js"></script>
+	</body>
+</html>
